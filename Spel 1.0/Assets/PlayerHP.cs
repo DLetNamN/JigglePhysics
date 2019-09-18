@@ -10,7 +10,7 @@ public class PlayerHP : MonoBehaviour
 
     void Update()
     {
-        if(playerHP <= 0)
+        if (playerHP <= 0)
         {
             SceneManager.LoadScene("DeathScreen");
         }
@@ -41,7 +41,7 @@ public class PlayerHP : MonoBehaviour
     {
         playerHP += 1;
 
-        if(playerHP >= 3)
+        if (playerHP >= 3)
         {
             playerHP = 3;
         }

@@ -1,16 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DeathScreeScript : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
 
-    void Update()
+    public string level;
+
+    public void RetryLevel()
     {
-        
+        SceneManager.LoadScene(level);
     }
 }

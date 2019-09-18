@@ -404,12 +404,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 733029789}
-        m_MethodName: 
+      - m_Target: {fileID: 733029794}
+        m_MethodName: RetryLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -467,6 +467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 930eea1f813b4cb47b5ba121a8f09bbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  level: Sebastian Scene
 --- !u!1 &811511768
 GameObject:
   m_ObjectHideFlags: 0
