@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -146,6 +147,22 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 660fae31e5b3c4e4e8260adce9099acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 0}
+  cameraOffset: {x: 3, y: 3.6, z: -10}
+  cameraTransform: {fileID: 0}
+  playerObject: {fileID: 0}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -1230,7 +1247,7 @@ GameObject:
   - component: {fileID: 1483957989}
   m_Layer: 0
   m_Name: PlayerCharacter
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1247,10 +1264,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3a23d59c058ef044a9267fb062e53d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movespeed: 5
-  jumpHeight: 10
-  jumps: 2
-  groundCheck: {fileID: 2129088051}
+  movespeed: 0
+  jumpHeight: 0
+  jumps: 0
+  groundCheck: {fileID: 0}
 --- !u!50 &1483957990
 Rigidbody2D:
   serializedVersion: 4
