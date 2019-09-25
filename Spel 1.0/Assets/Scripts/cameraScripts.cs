@@ -9,9 +9,18 @@ public class cameraScript : MonoBehaviour
     public Transform cameraTransform;
     public GameObject playerObject;
 
-    public void cameraFeedback()
-    {
+    public Rigidbody2D playerRigidbody;
+    public Vector3 playerCameraOffset;
 
+    public void cameraMovement()
+    {
+        float velocityX = playerRigidbody.velocity.x;
+        float velocityY = playerRigidbody.velocity.y;
+        float positionX = playerTransform.position.x;
+        float positionY = playerTransform.position.y;
+
+        playerTransform = playerObject.GetComponent<Transform>();
+        cameraTransform.position = new Vector3(positionX - velocityX, positionY + cameraOffset.y - velocityY, cameraOffset.z);
     }
 
     void Start()
@@ -23,7 +32,6 @@ public class cameraScript : MonoBehaviour
 
     void Update()
     {
-        playerTransform = playerObject.GetComponent<Transform>();
-        cameraTransform.position = new Vector3(playerTransform.position.x, playerTransform.position.y + cameraOffset.y, playerTransform.position.y + cameraOffset.z);
+        cameraMovement();   
     }
 }
