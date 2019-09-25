@@ -2,28 +2,39 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HeartScript : MonoBehaviour
-{
-    public int heartPoint;
-    public PlayerHP playerHealth;
+//public class HeartScript : MonoBehaviour
+//{
+//    //public int heartPoint;
+//    //public PlayerHP playerHealth;
+//    //public Renderer heartrenderer;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+//    ////public List<GameObject> bar;
 
-    }
+//    //void Start()
+//    //{
+//    //}
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (playerHealth.playerHP < heartPoint)
-        {
-            gameObject.SetActive(false);
-        }
+//    //void Update()
+//    //{
+//    //    if (playerHealth.playerHP < heartPoint)
+//    //    {
+//    //        heartrenderer.enabled = false;
+//    //    }
+//    //    if (playerHealth.playerHP > heartPoint)
+//    //    {
+//    //        heartrenderer.enabled = true;
+//    //    }
 
-        if(playerHealth.playerHP > heartPoint)
-        {
-            gameObject.SetActive(true);
-        }
-    }
-}
+//        //for (int i = 0; i < 4; i++)
+//        //{
+//        //    if (heartPoint > i)
+//        //    {
+//        //        bar[i].SetActive(true);
+//        //    }
+//        //    else
+//        //    {
+//        //        bar[i].SetActive(false);
+//        //    }
+//        //}
+//    }
+//}

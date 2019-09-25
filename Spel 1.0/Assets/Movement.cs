@@ -8,6 +8,7 @@ public class Movement : MonoBehaviour
     public float movespeed;
     public float jumpHeight;
     public int jumps;
+    public ParticleSystem jumpParticle;
 
 
     public GroundCheck groundCheck;
@@ -17,6 +18,7 @@ public class Movement : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        jumps = 2;
         rbody = GetComponent<Rigidbody2D>();
     }
 
@@ -39,6 +41,7 @@ public class Movement : MonoBehaviour
             rbody.velocity = new Vector2(rbody.velocity.x, jumpHeight);
             groundCheck.grounded = false;
             jumps = jumps - 1;
+            Instantiate(jumpParticle, transform.position, jumpParticle.transform.rotation);
 
         }
         if(jumps == 0)

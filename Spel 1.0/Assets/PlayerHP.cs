@@ -2,11 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerHP : MonoBehaviour
 {
-
+    //public GameObject healthbar;
     public int playerHP = 3;
+    public Slider healthbarslider;
+
+    public void Start()
+    {
+        healthbarslider.value = playerHP;
+    }
 
     void Update()
     {
@@ -14,6 +21,9 @@ public class PlayerHP : MonoBehaviour
         {
             SceneManager.LoadScene("DeathScreen");
         }
+
+        healthbarslider.value = playerHP;
+
     }
 
     public void OnCollisionEnter2D(Collision2D _collision)
@@ -33,7 +43,6 @@ public class PlayerHP : MonoBehaviour
     public void DamagePlayer()
     {
         playerHP -= 1;
-
         Debug.Log("Damage acquired");
     }
 
@@ -45,7 +54,6 @@ public class PlayerHP : MonoBehaviour
         {
             playerHP = 3;
         }
-
         Debug.Log("HP acquired");
     }
 
