@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cameraScript : MonoBehaviour
+public class cameraMovement : MonoBehaviour
 {
     public Transform playerTransform;
     public Vector3 cameraOffset = new Vector3(3, 3.6f, -10);
@@ -12,7 +12,7 @@ public class cameraScript : MonoBehaviour
     public Rigidbody2D playerRigidbody;
     public Vector3 playerCameraOffset;
 
-    public void cameraMovement()
+    public void cameraFollow()
     {
         float velocityX = playerRigidbody.velocity.x;
         float velocityY = playerRigidbody.velocity.y;
@@ -32,6 +32,6 @@ public class cameraScript : MonoBehaviour
 
     void Update()
     {
-        cameraMovement();   
+        cameraFollow();
     }
 }
