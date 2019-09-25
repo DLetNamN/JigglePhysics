@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DeathScreen.unity
     guid: e177cb9cc7012a842b2c4683383b8b5a
+  - enabled: 1
+    path: Assets/Scenes/Sebastian Scene.unity
+    guid: e438ada751ce9e6489c5af5dfd6a0943
   m_configObjects: {}
