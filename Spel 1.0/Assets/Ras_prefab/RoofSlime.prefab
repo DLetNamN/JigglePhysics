@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 127045134}
   - component: {fileID: 127045137}
   - component: {fileID: 127045141}
+  - component: {fileID: 9199368723271508378}
+  - component: {fileID: 1283429157363201191}
   m_Layer: 0
   m_Name: RoofSlime
   m_TagString: Untagged
@@ -207,3 +209,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gooopDropplet: {fileID: 8470449270540476707, guid: 82d753598567e6c42ab2c8477665f842,
     type: 3}
+--- !u!61 &9199368723271508378
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7581677449236149136}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.005598545, y: 0.000000059604645}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.100771, y: 1.100727}
+  m_EdgeRadius: 0
+--- !u!114 &1283429157363201191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7581677449236149136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09b28f43a88aa94f8d0664972782572, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
