@@ -6,7 +6,6 @@ public class Projectile : MonoBehaviour
 {
     public float Speed;
     public float lifeTime;
-    public GameObject BulletTrajectory;
     private Rigidbody2D rb;
     public Vector2 forceForward;
 
@@ -14,12 +13,13 @@ public class Projectile : MonoBehaviour
     {
         //Invoke("DestroyProjectile", lifeTime); 
         rb = GetComponent<Rigidbody2D>();
+
     }
 
     void FixedUpdate()
     {
         forceForward = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        rb.AddForce(-transform.up  * Speed);
+        rb.AddForce(transform.right  * Speed);
         lifeTime -= Time.deltaTime;
 
         if(lifeTime <= 0)
