@@ -9,6 +9,11 @@ public class Camera : MonoBehaviour
     public Transform cameraTransform;
     public GameObject playerObject;
 
+    public void cameraFeedback()
+    {
+
+    }
+
     void Start()
     {
         playerObject = GameObject.FindWithTag("Player");
