@@ -13,4 +13,11 @@ public class GoopCheck : MonoBehaviour
             goopOnGround = true;
         }
     }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Ground" )
+        {
+            goopOnGround = false;
+        }
+    }
 }

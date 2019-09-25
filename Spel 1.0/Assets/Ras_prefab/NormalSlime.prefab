@@ -16,8 +16,8 @@ GameObject:
   - component: {fileID: 2910282054988861919}
   - component: {fileID: 8107496163720951371}
   m_Layer: 0
-  m_Name: Slime_snail
-  m_TagString: Untagged
+  m_Name: NormalSlime
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,7 +104,8 @@ MonoBehaviour:
   WhereToLook: 0
   jumpsToBig: 0
   HowManyJump: 0
-  slimeJump: {x: 0, y: 10}
+  slimeJumpLeft: {x: -40, y: 100}
+  slimeJumpRight: {x: 40, y: 100}
 --- !u!50 &6889701077297113814
 Rigidbody2D:
   serializedVersion: 4
@@ -125,7 +126,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &6764087783077820849
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -165,7 +166,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.52429384}
+  m_Offset: {x: -0.01055789, y: -0.28225636}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -176,7 +177,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.16429818}
+  m_Size: {x: 0.8010602, y: 0.64426947}
   m_EdgeRadius: 0
 --- !u!114 &8107496163720951371
 MonoBehaviour:
