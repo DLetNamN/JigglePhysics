@@ -9,6 +9,7 @@ public class Movement : MonoBehaviour
     public float jumpHeight;
     public int jumps;
 
+
     public GroundCheck groundCheck;
 
     private Rigidbody2D rbody;
@@ -37,13 +38,12 @@ public class Movement : MonoBehaviour
         {
             rbody.velocity = new Vector2(rbody.velocity.x, jumpHeight);
             groundCheck.grounded = false;
-            jumps -= - 1;
+            jumps = jumps - 1;
 
         }
-        if (jumps == 0)
+        if(jumps == 0)
         {
             return;
         }
     }
-    
 }
