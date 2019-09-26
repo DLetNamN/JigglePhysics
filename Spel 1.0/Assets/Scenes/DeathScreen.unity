@@ -201,7 +201,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 262149141}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 733029794}
+        m_MethodName: ExitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &262149141
@@ -467,7 +478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 930eea1f813b4cb47b5ba121a8f09bbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: Sebastian Scene
+  level: ActualScene
 --- !u!1 &811511768
 GameObject:
   m_ObjectHideFlags: 0

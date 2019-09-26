@@ -12,4 +12,10 @@ public class DeathScreeScript : MonoBehaviour
     {
         SceneManager.LoadScene(level);
     }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+        print("Exit Game");
+    }
 }

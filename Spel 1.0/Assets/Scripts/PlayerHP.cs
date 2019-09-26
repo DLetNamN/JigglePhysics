@@ -39,6 +39,19 @@ public class PlayerHP : MonoBehaviour
         }
     }
 
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Enemy")
+        {
+            DamagePlayer();
+        }
+
+        if (collision.tag == "Heal")
+        {
+            HealPlayer();
+        }
+    }
+
 
     public void DamagePlayer()
     {

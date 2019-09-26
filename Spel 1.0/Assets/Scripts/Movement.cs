@@ -9,6 +9,7 @@ public class Movement : MonoBehaviour
     public float jumpHeight;
     public int jumps;
     public ParticleSystem jumpParticle;
+    public bool lookright = false;
 
 
     public GroundCheck groundCheck;
@@ -32,6 +33,29 @@ public class Movement : MonoBehaviour
             Jump();
         }
 
+        if (Input.GetKeyDown(KeyCode.D) && lookright == false)
+        {
+            Flip();
+
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.A) && lookright == true)
+        {
+            Flip();
+
+        }
+
+    }
+    void Flip()
+    {
+        // Switch the way the player is labelled as facing.
+        lookright = !lookright;
+
+        // Multiply the player's x local scale by -1.
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
     }
 
     void Jump()
@@ -44,9 +68,11 @@ public class Movement : MonoBehaviour
             Instantiate(jumpParticle, transform.position, jumpParticle.transform.rotation);
 
         }
-        if(jumps == 0)
+        if (jumps == 0)
         {
             return;
         }
     }
+
 }
+
