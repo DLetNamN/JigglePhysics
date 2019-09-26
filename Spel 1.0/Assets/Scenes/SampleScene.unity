@@ -190,6 +190,99 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 618652862, guid: 56d2634da997eef4bb20538750fc87ba, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 56d2634da997eef4bb20538750fc87ba, type: 3}
+--- !u!1 &618652861 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2157914822251216645, guid: 56d2634da997eef4bb20538750fc87ba,
+    type: 3}
+  m_PrefabInstance: {fileID: 402695412}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &618652862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618652861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c42d4e6fc6399664dabcbd42297bdb0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 0}
+  cameraOffset: {x: 3, y: 3.6, z: -10}
+  cameraTransform: {fileID: 0}
+  playerObject: {fileID: 0}
+  playerRigidbody: {fileID: 0}
+  playerCameraOffset: {x: 0, y: 0, z: 0}
+--- !u!1 &1573572253 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7789809916020985656, guid: 7123880b671fd5e45961fa446273fb09,
+    type: 3}
+  m_PrefabInstance: {fileID: 7789809915309367672}
+  m_PrefabAsset: {fileID: 0}
+--- !u!19719996 &1573572255 stripped
+TilemapCollider2D:
+  m_CorrespondingSourceObject: {fileID: 7789809916020985658, guid: 7123880b671fd5e45961fa446273fb09,
+    type: 3}
+  m_PrefabInstance: {fileID: 7789809915309367672}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &1573572256
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573572253}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!66 &1573572258
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573572253}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths:
+  - m_Collider: {fileID: 1573572255}
+    m_ColliderPaths:
+    - - X: 99999971
+        Y: -50000000
+      - X: 99999971
+        Y: -40000000
+      - X: -100000000
+        Y: -40000029
+      - X: -99999971
+        Y: -50000000
+  m_CompositePaths:
+    m_Paths:
+    - - {x: 9.999994, y: -5}
+      - {x: 9.999994, y: -4}
+      - {x: -10, y: -4.0000057}
+      - {x: -9.999994, y: -5}
+  m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.000005
 --- !u!1001 &7489521809862047766
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -335,6 +428,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7789809916020985658, guid: 7123880b671fd5e45961fa446273fb09,
+        type: 3}
+      propertyPath: m_UsedByComposite
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7123880b671fd5e45961fa446273fb09, type: 3}
