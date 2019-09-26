@@ -5,12 +5,7 @@ using UnityEngine;
 public class ByeGoop : MonoBehaviour
 {
     public bool GoopDead;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    public Sprite Splat;
     // Update is called once per frame
     void Update()
     {
@@ -19,10 +14,12 @@ public class ByeGoop : MonoBehaviour
             Destroy(gameObject);
         }
     }
-        private void OnTriggerEnter2D(Collider2D collision)
+        void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.tag == "Ground")
             {
+
+                
                 GoopDead = true;
             }
         }
