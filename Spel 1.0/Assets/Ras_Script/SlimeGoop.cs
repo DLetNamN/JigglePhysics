@@ -15,7 +15,6 @@ public class SlimeGoop : MonoBehaviour
     public Vector2 slimeJumpLeft;
     public Vector2 slimeJumpRight;
 
-    public GoopAqush goopSquish;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,31 +34,5 @@ public class SlimeGoop : MonoBehaviour
 
         if (TargetDistance <= -0.5)
             WhereToLook = false;
-
-        if (WhereToLook == false && HowManyJump < 3 && goopCheck.goopOnGround == true || Input.GetKey(KeyCode.H))
-        {
-            rBody.AddForce(slimeJumpLeft);
-            HowManyJump = HowManyJump + 1;
-            goopSquish.SquishTimer = 0;
-        }
-        else if (WhereToLook == false && HowManyJump >= 3 && goopCheck.goopOnGround == true || Input.GetKey(KeyCode.H))
-        {
-            rBody.AddForce(slimeJumpLeft * 2);
-            HowManyJump = 0;
-            goopSquish.SquishTimer = 0;
-        }
-
-        if (WhereToLook == true && HowManyJump < 3 && goopCheck.goopOnGround == true || Input.GetKey(KeyCode.H))
-        {
-            rBody.AddForce(slimeJumpRight);
-            HowManyJump = HowManyJump + 1;
-            goopSquish.SquishTimer = 0;
-        }
-        else if (WhereToLook == true && HowManyJump >= 3 && goopCheck.goopOnGround == true || Input.GetKey(KeyCode.H))
-        {
-            rBody.AddForce(slimeJumpRight * 2);
-            HowManyJump = 0;
-            goopSquish.SquishTimer = 0;
-        }
     }
 }
