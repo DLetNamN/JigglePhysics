@@ -557,7 +557,12 @@ PrefabInstance:
     - target: {fileID: 3950752743093270157, guid: f6a9a7eaca2ec0e4c8ee9bd223cdaaf2,
         type: 3}
       propertyPath: m_Name
-      value: MainCharacter
+      value: MainGun
+      objectReference: {fileID: 0}
+    - target: {fileID: 3950752743093270157, guid: f6a9a7eaca2ec0e4c8ee9bd223cdaaf2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3950752743093270152, guid: f6a9a7eaca2ec0e4c8ee9bd223cdaaf2,
         type: 3}
@@ -614,6 +619,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3950752743093270152, guid: f6a9a7eaca2ec0e4c8ee9bd223cdaaf2,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3950752743093270152, guid: f6a9a7eaca2ec0e4c8ee9bd223cdaaf2,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3950752743093270154, guid: f6a9a7eaca2ec0e4c8ee9bd223cdaaf2,
         type: 3}
       propertyPath: audioManager
@@ -637,7 +652,7 @@ PrefabInstance:
     - target: {fileID: 3950752743093270154, guid: f6a9a7eaca2ec0e4c8ee9bd223cdaaf2,
         type: 3}
       propertyPath: StartTimeBtwShots
-      value: 0.05
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 3950752743093270154, guid: f6a9a7eaca2ec0e4c8ee9bd223cdaaf2,
         type: 3}
