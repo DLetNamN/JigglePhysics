@@ -66,6 +66,8 @@ public class Movement : MonoBehaviour
             groundCheck.grounded = false;
             jumps = jumps - 1;
             Instantiate(jumpParticle, transform.position, jumpParticle.transform.rotation);
+            FindObjectOfType<AudioManager>().Play("JumpingSound");
+
 
         }
         if (jumps == 0)
